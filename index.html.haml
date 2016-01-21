@@ -1,0 +1,105 @@
+!!!5
+%html
+	%head
+		%title
+			Job Search | one search, all jobs. Indeed
+		%meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
+
+		%link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", :integrity => "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", :crossorigin => "anonymous"}
+
+		%link{:rel => "stylesheet", :href => "css/main.css"}
+
+	%body.index
+		%header#topnav.row.navbar
+			%nav#firstNav
+				%span.findJobs.current
+					Find Jobs
+				%a.findCvs{:href => "#"}
+					Find CVs
+				%a.employers{:href => "#"}
+					Employers / Post Job
+			%nav#secondNav
+				%a.upload.highlighted{:href => "#"}
+					Upload your CV
+				%a.signIn{:href => "#"}
+					Sign in
+		.container#main
+			.row.topStripe
+				%img.logo{:src => "images/logo.png", :alt => "Indeed. one search. all jobs."}
+			.row.searchStripe
+				.col-sm-12
+					%form.searchForm
+						.formItem
+							%label{:for => "jobTitle"}
+								what
+							%input#jobTitle{:name => "jobTitle"}
+							.subtext
+								job title, keywords or company name
+						.formItem
+							%label{:for => "city"}
+								where
+							%input#city{:name => "city"}
+							.subtext
+								city or postcode
+						.formItem.fiButton
+							.fiButtonSpacer
+								&nbsp;
+							%button
+								Find Jobs
+							.subtext	
+								%a{:href => "#"}
+									Advanced Job Search
+			.row.uploadStripe
+				.col-sm-12
+					%a.uploadCv.uploadIcon{:src => "#"}
+						Upload your CV -
+					It only takes a few seconds
+			.row.recentSearchesStripe
+				.col-sm-3
+				.col-sm-6#rsContainer
+					.recentSearchesHeader
+						My recent searches - 
+						%a{:href => "#"}
+							clear
+					%ul.recentSearches
+
+						- 3.times do
+							%li
+								%a{:href => "#"}
+									Manager - London
+				.col-sm-3
+		%footer#siteFooter
+			.col-sm-12
+				.row.cookies
+					#cookieWarning.infoBox
+						Cookies help us deliver our services. By using our services, you agree to our use of cookies.
+						%br
+						%a{:href => "#"}
+							Learn more
+						%span.separator
+							&middot;
+						%a{:href => "#"}
+							OK				
+				%nav.row.resultsFooterNavStripe.navbar
+					%a{:href => "#"}
+						Browse Jobs
+					%span.separator
+						\-
+					%a{:href => "#"}
+						Job Market Competition
+					%span.separator
+						\-
+					%a{:href => "#"}
+						API
+					%span.separator
+						\-
+					%a{:href => "#"}
+						About
+					%span.separator
+						\-
+					%a{:href => "#"}
+						Help Centre
+				
+				.row.footerTerms
+					%a{:href => "#"}
+						Cookies, Privacy and Terms

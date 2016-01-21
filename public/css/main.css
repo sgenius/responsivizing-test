@@ -1,0 +1,403 @@
+a {
+  color: #00c; }
+  a:hover {
+    color: #00c; }
+
+.highlighted, .formItem label {
+  color: #f60;
+  font-weight: bold; }
+
+.infoBox {
+  padding: 1rem;
+  background: #e5f2ff;
+  text-align: center; }
+
+#topnav {
+  min-height: 3.4rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  font-size: 1.33rem; }
+  #topnav > * > * {
+    display: inline-block;
+    padding: 0.9rem 1.2rem; }
+  #topnav .current {
+    font-weight: bold; }
+
+#firstNav, #secondNav {
+  padding-left: 0;
+  padding-right: 0;
+  display: inline-block; }
+
+#secondNav {
+  float: right;
+  text-align: right; }
+  #secondNav .highlighted, #secondNav .formItem label, .formItem #secondNav label {
+    font-weight: normal; }
+
+img.logo {
+  width: 100%;
+  max-width: 250px; }
+
+.searchForm {
+  width: 100%; }
+
+.formItem {
+  display: block;
+  padding: 0.5rem 0;
+  width: 100%; }
+  .formItem label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.86667rem;
+    line-height: 1; }
+  .formItem input, .formItem button {
+    font-size: 1.8rem;
+    line-height: 1;
+    padding: 0.8rem 0.6rem; }
+  .formItem input {
+    width: 100%;
+    border: 0.1rem solid #ccc;
+    border-bottom-color: #aaa;
+    border-right-color: #aaa;
+    -webkit-box-shadow: 1px 1px 0 0 #ddd;
+    box-shadow: 1px 1px 0 0 #ddd; }
+  .formItem button {
+    position: relative;
+    padding: 0.8rem 1.6rem;
+    width: 100%;
+    border: 0.1rem solid #1c4ed9;
+    background-color: #3163f2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3163f2), to(#2b57d5));
+    background-image: gradient(to bottom, #3163f2, #2b57d5);
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.3; }
+    .formItem button:before {
+      content: "";
+      width: 98%;
+      height: 0.1rem;
+      position: absolute;
+      top: 0;
+      left: 1%;
+      border-bottom: 1px solid #69f; }
+    .formItem button:hover {
+      border-color: #3866e5;
+      background-color: #5780f4;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#5780f4), to(#4d72dc));
+      background-image: gradient(to bottom, #5780f4, #4d72dc); }
+      .formItem button:hover:before {
+        border-bottom: 1px solid #8fb4ff; }
+  .formItem .subtext {
+    margin-top: 0.2rem;
+    color: #aaa;
+    font-size: 1.2rem; }
+    .formItem .subtext a {
+      color: #77c;
+      font-size: 1.1rem; }
+
+.fiButtonSpacer {
+  display: none; }
+
+.uploadIcon:before {
+  content: "";
+  width: 1.8rem;
+  height: 2.4rem;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAMAAADAi10DAAAAA3NCSVQICAjb4U/gAAAAdVBMVEX////x7/3v7vjl4vXj4PTi3/Lg3fHf2/Dd2u7c2O3a1+vZ1erX0+nW0ufU0ObSz+TRzePPy+LOyuDMyN+uqt+lpeaIiNojI84gIMoeHsccHMQaGsEXF74VFbsTE7gREbQODrEMDK4KCqsICKgFBaQDA6EBAZ54rl54AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M1cbXjNgAAABV0RVh0Q3JlYXRpb24gVGltZQA5LzEzLzExzT7gEAAAAIJJREFUGNOt0LsOgkAQRuFzkGhP5Ob7PxsmaCy5KDEWC0vEQgv/avPN7M5mzNkm5bqRY0ry2eX/6c5+Q2PO5RAoQdWx0GJUdaahVC2HlfpKVat+oa52Tt1peP4MJ6ABDBMzuAmQwSPQFKowxS4W8u2rX8jdSuGYtkR6tvPFleImfqEXCDYV9f9Fn8cAAAAASUVORK5CYII="); }
+
+.recentSearchesStripe {
+  margin: 0 0 4rem; }
+
+.recentSearchesHeader {
+  color: #6f6f6f;
+  border-bottom: 1px solid #ebebeb;
+  padding: 0.8rem 0; }
+  .recentSearchesHeader a {
+    color: #77c; }
+
+ul.recentSearches {
+  list-style: inside none;
+  padding-left: 0; }
+  ul.recentSearches li {
+    padding: 0.8rem 0; }
+
+#siteFooter {
+  text-align: center;
+  font-size: 1.3rem; }
+
+#cookieWarning {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 560px;
+  font-size: 1.2rem;
+  text-align: center; }
+  #cookieWarning a {
+    text-decoration: underline; }
+
+.resultsFooterNavStripe,
+.footerTerms {
+  margin: 0;
+  padding: 1rem 1rem 0;
+  font-size: 1.4rem; }
+  .resultsFooterNavStripe a,
+  .footerTerms a {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0.2rem 0;
+    border: 0.1rem dotted #ddd; }
+  .resultsFooterNavStripe .separator,
+  .footerTerms .separator {
+    display: none; }
+
+.resultsFooterNavStripe {
+  min-height: auto;
+  padding-bottom: 1rem; }
+  .resultsFooterNavStripe + .footerTerms {
+    padding-top: 0; }
+
+.footerTerms {
+  padding-bottom: 2rem; }
+
+body.index .topStripe {
+  min-height: 3.3rem;
+  margin-bottom: 1.7rem; }
+body.index .uploadStripe {
+  margin: 1.3333rem 0;
+  text-align: center; }
+body.index .uploadCv {
+  font-weight: bold; }
+
+body.search .topStripe {
+  padding-bottom: 1.5rem; }
+
+.currentSearch {
+  margin-top: 0;
+  font-weight: bold; }
+
+h1.currentSearch {
+  font-size: 2rem; }
+
+.refineItemSelector {
+  background: #eeeef9;
+  margin-bottom: 1rem; }
+
+.refineItemsWrapper {
+  display: none;
+  border: 1px solid #d0d0ed;
+  padding: 1rem;
+  background: #fff; }
+
+input#refine {
+  margin-left: 1rem;
+  min-width: 1.6rem;
+  min-height: 1.6rem; }
+
+input#refine:checked ~ .refineItemsWrapper {
+  display: block; }
+
+.refineItemsWrapper .refineItem {
+  padding: 0.6rem 0;
+  font-size: 1.4rem; }
+  .refineItemsWrapper .refineItem select, .refineItemsWrapper .refineItem option {
+    padding: 0.2rem; }
+
+ul.refineList {
+  padding-left: 0;
+  margin-bottom: 0; }
+  ul.refineList li {
+    list-style: none;
+    padding: 0.4rem 0; }
+
+#searchCount {
+  color: #6f6f6f;
+  font-size: 1.2rem; }
+
+.searchResult {
+  margin: 0;
+  padding: 1.6rem 0;
+  border-bottom: 0.1rem dotted #ccc; }
+
+.resultHeader {
+  color: #000;
+  margin-bottom: 0.5rem; }
+
+.resultTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0.2rem 0; }
+
+.resultCompany {
+  font-size: 1.5rem; }
+
+.resultStars {
+  display: inline-block; }
+
+.yellowStar, .grayStar {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url(../images/star_sm.png) top left;
+  overflow: hidden; }
+
+.yellowStar {
+  background-position: bottom left; }
+
+a.resultOtherLocations {
+  font-size: 1.2rem; }
+
+.resultDescription {
+  color: #444;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem; }
+
+.resultFooter {
+  color: gray;
+  font-size: 1.3rem; }
+  .resultFooter a {
+    color: #77c; }
+
+#searchResultsPagination {
+  margin: 1.5rem 0; }
+  #searchResultsPagination span, #searchResultsPagination a {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    margin: 0 0.2rem;
+    border: 1px dotted #ccc;
+    font-size: 1.4rem; }
+  #searchResultsPagination .current {
+    font-weight: bold; }
+
+.emailSubscriptionBox {
+  background: #ebebeb;
+  padding: 0.6rem 0.4rem; }
+  .emailSubscriptionBox .blurb:before {
+    content: "";
+    display: inline-block;
+    margin: 0 0.5rem 0 0;
+    width: 18px;
+    height: 12px;
+    background: url(../images/ja_icon.png);
+    vertical-align: middle; }
+  .emailSubscriptionBox .formItem label {
+    color: #000; }
+  .emailSubscriptionBox button {
+    margin: 0.5rem 0;
+    padding: 0.4rem 1.2rem;
+    font-size: 1.6rem; }
+
+#esbCallToAction {
+  position: relative;
+  padding: 1.3rem 1.0rem;
+  margin: 2rem 0;
+  background: #f60;
+  color: #fff;
+  font-weight: bold; }
+  #esbCallToAction:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 3%;
+    bottom: auto;
+    border-width: 16px 10px 16px 10px;
+    border-style: solid;
+    border-color: #f60 transparent transparent transparent;
+    display: block; }
+
+p.esbCancel {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  color: #666; }
+
+#emailSubscriptionBottom {
+  border: 0.2rem solid #f60; }
+
+#emailSubscriptionRight {
+  display: none; }
+
+@media (min-width: 600px) {
+  .searchForm {
+    display: table;
+    width: 100%; }
+
+  .formItem {
+    display: table-cell;
+    width: auto;
+    padding: 0 0.3rem 0 0; }
+    .formItem input, .formItem button {
+      padding: 0.3rem 0.6rem; }
+    .formItem button {
+      padding: 0.4rem 0.8rem;
+      width: auto; }
+
+  .fiButtonSpacer {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.86667rem;
+    line-height: 1; }
+
+  .recentSearchesStripe {
+    font-size: 1.3333rem; }
+
+  .recentSearchesHeader {
+    padding: 0; }
+
+  ul.recentSearches li {
+    padding: 0.3rem 0; }
+
+  .resultsFooterNavStripe,
+  .footerTerms {
+    font-size: 1.2rem; }
+    .resultsFooterNavStripe a,
+    .footerTerms a {
+      padding: 0;
+      border: 0; }
+    .resultsFooterNavStripe .separator,
+    .footerTerms .separator {
+      display: inline; } }
+@media (min-width: 768px) {
+  #firstNav {
+    padding-left: 15px; }
+
+  #secondNav {
+    padding-right: 15px;
+    text-align: right; }
+    #secondNav .highlighted, #secondNav .formItem label, .formItem #secondNav label {
+      font-weight: normal; }
+
+  body.search .formItem label {
+    font-size: 1.3333rem; }
+  body.search #searchCount {
+    text-align: right;
+    float: right;
+    display: inline-block;
+    margin: 0 0 2rem 3rem; }
+  body.search .emailSubscriptionBox .formItem {
+    display: block;
+    width: 100%;
+    max-width: 28rem; }
+  body.search .emailSubscriptionBox button {
+    font-size: 1.2rem; } }
+@media (min-width: 992px) {
+  h1.currentSearch {
+    font-size: 1.6rem; }
+
+  input#refine, label[for="refine"] {
+    display: none; }
+
+  .refineItemsWrapper {
+    display: block;
+    border: 0;
+    padding: 0; }
+    .refineItemsWrapper .refineItem {
+      font-size: 1.2rem; }
+
+  ul.refineList li {
+    padding: 0.2rem 0; }
+
+  #emailSubscriptionRight {
+    display: block; } }

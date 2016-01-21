@@ -1,0 +1,1 @@
+start filewatcher "**/*.*" "stasis" -x "**/public"

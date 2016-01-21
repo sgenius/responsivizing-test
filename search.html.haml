@@ -1,0 +1,286 @@
+!!!5
+%html
+	%head
+		%title
+			Job Search | one search, all jobs. Indeed
+		%meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
+
+		%link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", :integrity => "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", :crossorigin => "anonymous"}
+
+		%link{:rel => "stylesheet", :href => "css/main.css"}		
+
+	%body.search
+		%header#topnav.row.navbar
+			%nav#firstNav.col-sm-7
+				%span.findJobs.current
+					Find Jobs
+				%a.findCvs{:href => "#"}
+					Find CVs
+				%a.employers{:href => "#"}
+					Employers / Post Job
+			%nav#secondNav.col-sm-5
+				%a.upload.highlighted{:href => "#"}
+					Upload your CV
+				%a.signIn{:href => "#"}
+					Sign in
+		.container#main
+			.row.topStripe
+				.col-md-3
+					%img.logo{:src => "images/logo.png", :alt => "Indeed. one search. all jobs."}
+				.col-md-9
+					%form.searchForm
+						.formItem
+							%label{:for => "jobTitle"}
+								what
+							%input#jobTitle{:name => "jobTitle"}
+							.subtext
+								job title, keywods or company name
+						.formItem
+							%label{:for => "city"}
+								where
+							%input#city{:name => "city"}
+							.subtext
+								city or postcode
+						.formItem.fiButton
+							.fiButtonSpacer
+								&nbsp;
+							%button
+								Find Jobs
+							.subtext
+								%a{:href => "#"}
+									Advanced Job Search
+			.row.mainStripe
+				%aside.col-md-3#refineSearch
+					%h1.currentSearch
+						manager jobs in London
+					.refineItem.sortBy
+						Sort by: 
+						%strong
+							relevance -
+						%a{:href => "#"}
+							date
+
+					.refineItemSelector
+						%input#refine{:type=>"checkbox"}
+						%label{:for=>"refine"}
+							Refine this search
+						.refineItemsWrapper
+							.refineItem.distance
+								%strong
+									Distance:
+								%form#radiusUpdate{:name => "radiusUpdate"}
+									%select#radius
+										%option{:value => "0"}
+											Exact location only
+										%option{:value => "5"}
+											within 5 miles
+										%option{:value => "10"}
+											within 10 miles
+										%option{:value => "15"}
+											within 15 miles
+										%option{:value => "25", :selected => "selected"}
+											within 25 miles
+										%option{:value => "50"}
+											within 50 miles
+										%option{:value => "100"}
+											within 100 miles
+							.refineItem.salary
+								%strong
+									Salary Estimate
+								%ul#salaryUpdate.refineList
+									%li
+										%a{:href => "#"}
+											&pound;20,000+
+										(107103)
+									%li
+										%a{:href => "#"}
+											&pound;30,000+
+										(81333)
+									%li
+										%a{:href => "#"}
+											&pound;35,000+
+										(68507)
+									%li
+										%a{:href => "#"}
+											&pound;45,000+
+										(45540)
+									%li
+										%a{:href => "#"}
+											&pound;60,000+
+										(20337)
+							.refineItem.jobTitle
+								%strong
+									Title
+								%ul#titleUpdate.refineList
+									%li
+										%a{:href => "#"}
+											Project Manager
+									%li
+										%a{:href => "#"}
+											Business Development Manager
+									%li
+										%a{:href => "#"}
+											Account Manager
+									%li
+										%a{:href => "#"}
+											Site Manager
+									%li
+										%a{:href => "#"}
+											Finance Manager
+									%li
+										%a.highlighted{:href => "#"}
+											more &raquo; 
+							.refineItem.company
+								%strong
+									Company
+							.refineItem.location
+								%strong
+									Location
+							.refineItem.jobType
+								%strong
+									Job Type
+								%ul#jobTypeUpdate.refineList
+									%li
+										%a{:href => "#"}
+											Permanent
+										(47401)
+									%li
+										%a{:href => "#"}
+											Full-time
+										(26518)
+									%li
+										%a{:href => "#"}
+											Contract
+										(6235)
+									%li
+										%a{:href => "#"}
+											Temporary
+										(6210)
+									%li
+										%a{:href => "#"}
+											Part-time
+										(2665)							
+				%section.col-md-6#searchResults
+					#searchResultsTop
+						#searchCount
+							Jobs 1 to 10 of 118,704
+						#srUploadCv
+							%a.uploadCv.uploadIcon{:href => "#"}
+								Upload your CV
+							and easily apply to jobs from any device!
+					- 10.times do
+						%article.searchResult
+							%header.resultHeader
+								%h2.resultTitle
+									%a{:href => "#"}
+										General Manager
+								.resultCompany
+									Mitchells &amp; Butlers
+								.resultStars
+									%span.yellowStar
+									%span.yellowStar
+									%span.yellowStar
+									%span.yellowStar
+									%span.grayStar
+								%a.resultReviews{:href => "#"}
+									36 reviews
+								\-
+								%span.resultLocation
+									London
+								%a.resultOtherLocations{:href => "#"}
+									+2 locations
+								.resultSalary
+									&pound;42,000 a year
+							.resultDescription
+								General Manager vacancy! Mitchells & Butlers are looking for General Manager level candidates to get in touch!...
+							%footer.resultFooter
+								%span.resultAge
+									5 days ago
+								\-
+								%a.resultSave{:href => "#"}
+									save job
+								\-
+								%a.resultEmail{:href => "#"}
+									email
+								\-
+								%a.resultMore{:href => "#"}
+									more...
+					#esbCallToAction
+						Never miss a job. Get new jobs emailed to you daily.
+					#emailSubscriptionBottom.emailSubscriptionBox
+						%form.emailSubscription#esb
+							%p.blurb
+								Get email upates for the latest 
+								%strong.currentSearch
+									manager jobs in London
+							.formItem
+								%label{:for => "esbEmail"}
+									My email:
+								%input#esbEmail{:name => "esbEmail"}
+							%button
+								Send me new jobs
+							%p.esbCancel
+								You can cancel email alerts at any time.
+					%nav#searchResultsPagination
+						Results Page:
+						%span.current
+							1
+						%a{:href => "#"}
+							2
+						%a{:href => "#"}
+							3
+						%a{:href => "#"}
+							4
+						%a{:href => "#"}
+							5
+						%a.next{:href => "#"}
+							Next &raquo;
+				%aside.col-md-3
+					#emailSubscriptionRight.emailSubscriptionBox
+						%form.emailSubscription#esr
+							%p.blurb
+								Get new jobs for this search by email 
+							.formItem
+								%label{:for => "esrEmail"}
+									My email:
+								%input#esbEmail{:name => "esrEmail"}
+							%button
+								Send me new jobs
+							%p.esbCancel
+								You can cancel email alerts at any time.						
+
+		%footer#siteFooter
+			.col-sm-12
+				%nav.row.resultsFooterNavStripe.navbar
+					%a{:href => "#"}
+						Browse Jobs
+					%span.separator
+						\-
+					%a{:href => "#"}
+						Job Market Competition
+					%span.separator
+						\-
+					%a{:href => "#"}
+						API
+					%span.separator
+						\-
+					%a{:href => "#"}
+						About
+					%span.separator
+						\-
+					%a{:href => "#"}
+						Help Centre
+				.row.cookies
+					#cookieWarning.infoBox
+						Cookies help us deliver our services. By using our services, you agree to our use of cookies.
+						%br
+						%a{:href => "#"}
+							Learn more
+						%span.separator
+							&middot;
+						%a{:href => "#"}
+							OK
+				.row.footerTerms
+					&copy;2016 Indeed -
+					%a{:href => "#"}
+						Cookies, Privacy and Terms				

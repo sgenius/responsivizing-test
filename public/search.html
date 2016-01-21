@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Job Search | one search, all jobs. Indeed
+    </title>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' rel='stylesheet'>
+    <link href='css/main.css' rel='stylesheet'>
+  </head>
+  <body class='search'>
+    <header class='row navbar' id='topnav'>
+      <nav class='col-sm-7' id='firstNav'>
+        <span class='findJobs current'>
+          Find Jobs
+        </span>
+        <a class='findCvs' href='#'>
+          Find CVs
+        </a>
+        <a class='employers' href='#'>
+          Employers / Post Job
+        </a>
+      </nav>
+      <nav class='col-sm-5' id='secondNav'>
+        <a class='upload highlighted' href='#'>
+          Upload your CV
+        </a>
+        <a class='signIn' href='#'>
+          Sign in
+        </a>
+      </nav>
+    </header>
+    <div class='container' id='main'>
+      <div class='row topStripe'>
+        <div class='col-md-3'>
+          <img alt='Indeed. one search. all jobs.' class='logo' src='images/logo.png'>
+        </div>
+        <div class='col-md-9'>
+          <form class='searchForm'>
+            <div class='formItem'>
+              <label for='jobTitle'>
+                what
+              </label>
+              <input id='jobTitle' name='jobTitle'>
+              <div class='subtext'>
+                job title, keywods or company name
+              </div>
+            </div>
+            <div class='formItem'>
+              <label for='city'>
+                where
+              </label>
+              <input id='city' name='city'>
+              <div class='subtext'>
+                city or postcode
+              </div>
+            </div>
+            <div class='formItem fiButton'>
+              <div class='fiButtonSpacer'>
+                &nbsp;
+              </div>
+              <button>
+                Find Jobs
+              </button>
+              <div class='subtext'>
+                <a href='#'>
+                  Advanced Job Search
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class='row mainStripe'>
+        <aside class='col-md-3' id='refineSearch'>
+          <h1 class='currentSearch'>
+            manager jobs in London
+          </h1>
+          <div class='refineItem sortBy'>
+            Sort by:
+            <strong>
+              relevance -
+            </strong>
+            <a href='#'>
+              date
+            </a>
+          </div>
+          <div class='refineItemSelector'>
+            <input id='refine' type='checkbox'>
+            <label for='refine'>
+              Refine this search
+            </label>
+            <div class='refineItemsWrapper'>
+              <div class='refineItem distance'>
+                <strong>
+                  Distance:
+                </strong>
+                <form id='radiusUpdate' name='radiusUpdate'>
+                  <select id='radius'>
+                    <option value='0'>
+                      Exact location only
+                    </option>
+                    <option value='5'>
+                      within 5 miles
+                    </option>
+                    <option value='10'>
+                      within 10 miles
+                    </option>
+                    <option value='15'>
+                      within 15 miles
+                    </option>
+                    <option selected='selected' value='25'>
+                      within 25 miles
+                    </option>
+                    <option value='50'>
+                      within 50 miles
+                    </option>
+                    <option value='100'>
+                      within 100 miles
+                    </option>
+                  </select>
+                </form>
+              </div>
+              <div class='refineItem salary'>
+                <strong>
+                  Salary Estimate
+                </strong>
+                <ul class='refineList' id='salaryUpdate'>
+                  <li>
+                    <a href='#'>
+                      &pound;20,000+
+                    </a>
+                    (107103)
+                  </li>
+                  <li>
+                    <a href='#'>
+                      &pound;30,000+
+                    </a>
+                    (81333)
+                  </li>
+                  <li>
+                    <a href='#'>
+                      &pound;35,000+
+                    </a>
+                    (68507)
+                  </li>
+                  <li>
+                    <a href='#'>
+                      &pound;45,000+
+                    </a>
+                    (45540)
+                  </li>
+                  <li>
+                    <a href='#'>
+                      &pound;60,000+
+                    </a>
+                    (20337)
+                  </li>
+                </ul>
+              </div>
+              <div class='refineItem jobTitle'>
+                <strong>
+                  Title
+                </strong>
+                <ul class='refineList' id='titleUpdate'>
+                  <li>
+                    <a href='#'>
+                      Project Manager
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Business Development Manager
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Account Manager
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Site Manager
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Finance Manager
+                    </a>
+                  </li>
+                  <li>
+                    <a class='highlighted' href='#'>
+                      more &raquo;
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class='refineItem company'>
+                <strong>
+                  Company
+                </strong>
+              </div>
+              <div class='refineItem location'>
+                <strong>
+                  Location
+                </strong>
+              </div>
+              <div class='refineItem jobType'>
+                <strong>
+                  Job Type
+                </strong>
+                <ul class='refineList' id='jobTypeUpdate'>
+                  <li>
+                    <a href='#'>
+                      Permanent
+                    </a>
+                    (47401)
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Full-time
+                    </a>
+                    (26518)
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Contract
+                    </a>
+                    (6235)
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Temporary
+                    </a>
+                    (6210)
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Part-time
+                    </a>
+                    (2665)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <section class='col-md-6' id='searchResults'>
+          <div id='searchResultsTop'>
+            <div id='searchCount'>
+              Jobs 1 to 10 of 118,704
+            </div>
+            <div id='srUploadCv'>
+              <a class='uploadCv uploadIcon' href='#'>
+                Upload your CV
+              </a>
+              and easily apply to jobs from any device!
+            </div>
+          </div>
+          <article class='searchResult'>
+            <header class='resultHeader'>
+              <h2 class='resultTitle'>
+                <a href='#'>
+                  General Manager
+                </a>
+              </h2>
+              <div class='resultCompany'>
+                Mitchells &amp; Butlers
+              </div>
+              <div class='resultStars'>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='grayStar'></span>
+              </div>
+              <a class='resultReviews' href='#'>
+                36 reviews
+              </a>
+              -
+              <span class='resultLocation'>
+                London
+              </span>
+              <a class='resultOtherLocations' href='#'>
+                +2 locations
+              </a>
+              <div class='resultSalary'>
+                &pound;42,000 a year
+              </div>
+            </header>
+            <div class='resultDescription'>
+              General Manager vacancy! Mitchells & Butlers are looking for General Manager level candidates to get in touch!...
+            </div>
+            <footer class='resultFooter'>
+              <span class='resultAge'>
+                5 days ago
+              </span>
+              -
+              <a class='resultSave' href='#'>
+                save job
+              </a>
+              -
+              <a class='resultEmail' href='#'>
+                email
+              </a>
+              -
+              <a class='resultMore' href='#'>
+                more...
+              </a>
+            </footer>
+          </article>
+          <article class='searchResult'>
+            <header class='resultHeader'>
+              <h2 class='resultTitle'>
+                <a href='#'>
+                  General Manager
+                </a>
+              </h2>
+              <div class='resultCompany'>
+                Mitchells &amp; Butlers
+              </div>
+              <div class='resultStars'>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='grayStar'></span>
+              </div>
+              <a class='resultReviews' href='#'>
+                36 reviews
+              </a>
+              -
+              <span class='resultLocation'>
+                London
+              </span>
+              <a class='resultOtherLocations' href='#'>
+                +2 locations
+              </a>
+              <div class='resultSalary'>
+                &pound;42,000 a year
+              </div>
+            </header>
+            <div class='resultDescription'>
+              General Manager vacancy! Mitchells & Butlers are looking for General Manager level candidates to get in touch!...
+            </div>
+            <footer class='resultFooter'>
+              <span class='resultAge'>
+                5 days ago
+              </span>
+              -
+              <a class='resultSave' href='#'>
+                save job
+              </a>
+              -
+              <a class='resultEmail' href='#'>
+                email
+              </a>
+              -
+              <a class='resultMore' href='#'>
+                more...
+              </a>
+            </footer>
+          </article>
+          <article class='searchResult'>
+            <header class='resultHeader'>
+              <h2 class='resultTitle'>
+                <a href='#'>
+                  General Manager
+                </a>
+              </h2>
+              <div class='resultCompany'>
+                Mitchells &amp; Butlers
+              </div>
+              <div class='resultStars'>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='grayStar'></span>
+              </div>
+              <a class='resultReviews' href='#'>
+                36 reviews
+              </a>
+              -
+              <span class='resultLocation'>
+                London
+              </span>
+              <a class='resultOtherLocations' href='#'>
+                +2 locations
+              </a>
+              <div class='resultSalary'>
+                &pound;42,000 a year
+              </div>
+            </header>
+            <div class='resultDescription'>
+              General Manager vacancy! Mitchells & Butlers are looking for General Manager level candidates to get in touch!...
+            </div>
+            <footer class='resultFooter'>
+              <span class='resultAge'>
+                5 days ago
+              </span>
+              -
+              <a class='resultSave' href='#'>
+                save job
+              </a>
+              -
+              <a class='resultEmail' href='#'>
+                email
+              </a>
+              -
+              <a class='resultMore' href='#'>
+                more...
+              </a>
+            </footer>
+          </article>
+          <article class='searchResult'>
+            <header class='resultHeader'>
+              <h2 class='resultTitle'>
+                <a href='#'>
+                  General Manager
+                </a>
+              </h2>
+              <div class='resultCompany'>
+                Mitchells &amp; Butlers
+              </div>
+              <div class='resultStars'>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='grayStar'></span>
+              </div>
+              <a class='resultReviews' href='#'>
+                36 reviews
+              </a>
+              -
+              <span class='resultLocation'>
+                London
+              </span>
+              <a class='resultOtherLocations' href='#'>
+                +2 locations
+              </a>
+              <div class='resultSalary'>
+                &pound;42,000 a year
+              </div>
+            </header>
+            <div class='resultDescription'>
+              General Manager vacancy! Mitchells & Butlers are looking for General Manager level candidates to get in touch!...
+            </div>
+            <footer class='resultFooter'>
+              <span class='resultAge'>
+                5 days ago
+              </span>
+              -
+              <a class='resultSave' href='#'>
+                save job
+              </a>
+              -
+              <a class='resultEmail' href='#'>
+                email
+              </a>
+              -
+              <a class='resultMore' href='#'>
+                more...
+              </a>
+            </footer>
+          </article>
+          <article class='searchResult'>
+            <header class='resultHeader'>
+              <h2 class='resultTitle'>
+                <a href='#'>
+                  General Manager
+                </a>
+              </h2>
+              <div class='resultCompany'>
+                Mitchells &amp; Butlers
+              </div>
+              <div class='resultStars'>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='grayStar'></span>
+              </div>
+              <a class='resultReviews' href='#'>
+                36 reviews
+              </a>
+              -
+              <span class='resultLocation'>
+                London
+              </span>
+              <a class='resultOtherLocations' href='#'>
+                +2 locations
+              </a>
+              <div class='resultSalary'>
+                &pound;42,000 a year
+              </div>
+            </header>
+            <div class='resultDescription'>
+              General Manager vacancy! Mitchells & Butlers are looking for General Manager level candidates to get in touch!...
+            </div>
+            <footer class='resultFooter'>
+              <span class='resultAge'>
+                5 days ago
+              </span>
+              -
+              <a class='resultSave' href='#'>
+                save job
+              </a>
+              -
+              <a class='resultEmail' href='#'>
+                email
+              </a>
+              -
+              <a class='resultMore' href='#'>
+                more...
+              </a>
+            </footer>
+          </article>
+          <article class='searchResult'>
+            <header class='resultHeader'>
+              <h2 class='resultTitle'>
+                <a href='#'>
+                  General Manager
+                </a>
+              </h2>
+              <div class='resultCompany'>
+                Mitchells &amp; Butlers
+              </div>
+              <div class='resultStars'>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='grayStar'></span>
+              </div>
+              <a class='resultReviews' href='#'>
+                36 reviews
+              </a>
+              -
+              <span class='resultLocation'>
+                London
+              </span>
+              <a class='resultOtherLocations' href='#'>
+                +2 locations
+              </a>
+              <div class='resultSalary'>
+                &pound;42,000 a year
+              </div>
+            </header>
+            <div class='resultDescription'>
+              General Manager vacancy! Mitchells & Butlers are looking for General Manager level candidates to get in touch!...
+            </div>
+            <footer class='resultFooter'>
+              <span class='resultAge'>
+                5 days ago
+              </span>
+              -
+              <a class='resultSave' href='#'>
+                save job
+              </a>
+              -
+              <a class='resultEmail' href='#'>
+                email
+              </a>
+              -
+              <a class='resultMore' href='#'>
+                more...
+              </a>
+            </footer>
+          </article>
+          <article class='searchResult'>
+            <header class='resultHeader'>
+              <h2 class='resultTitle'>
+                <a href='#'>
+                  General Manager
+                </a>
+              </h2>
+              <div class='resultCompany'>
+                Mitchells &amp; Butlers
+              </div>
+              <div class='resultStars'>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='grayStar'></span>
+              </div>
+              <a class='resultReviews' href='#'>
+                36 reviews
+              </a>
+              -
+              <span class='resultLocation'>
+                London
+              </span>
+              <a class='resultOtherLocations' href='#'>
+                +2 locations
+              </a>
+              <div class='resultSalary'>
+                &pound;42,000 a year
+              </div>
+            </header>
+            <div class='resultDescription'>
+              General Manager vacancy! Mitchells & Butlers are looking for General Manager level candidates to get in touch!...
+            </div>
+            <footer class='resultFooter'>
+              <span class='resultAge'>
+                5 days ago
+              </span>
+              -
+              <a class='resultSave' href='#'>
+                save job
+              </a>
+              -
+              <a class='resultEmail' href='#'>
+                email
+              </a>
+              -
+              <a class='resultMore' href='#'>
+                more...
+              </a>
+            </footer>
+          </article>
+          <article class='searchResult'>
+            <header class='resultHeader'>
+              <h2 class='resultTitle'>
+                <a href='#'>
+                  General Manager
+                </a>
+              </h2>
+              <div class='resultCompany'>
+                Mitchells &amp; Butlers
+              </div>
+              <div class='resultStars'>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='grayStar'></span>
+              </div>
+              <a class='resultReviews' href='#'>
+                36 reviews
+              </a>
+              -
+              <span class='resultLocation'>
+                London
+              </span>
+              <a class='resultOtherLocations' href='#'>
+                +2 locations
+              </a>
+              <div class='resultSalary'>
+                &pound;42,000 a year
+              </div>
+            </header>
+            <div class='resultDescription'>
+              General Manager vacancy! Mitchells & Butlers are looking for General Manager level candidates to get in touch!...
+            </div>
+            <footer class='resultFooter'>
+              <span class='resultAge'>
+                5 days ago
+              </span>
+              -
+              <a class='resultSave' href='#'>
+                save job
+              </a>
+              -
+              <a class='resultEmail' href='#'>
+                email
+              </a>
+              -
+              <a class='resultMore' href='#'>
+                more...
+              </a>
+            </footer>
+          </article>
+          <article class='searchResult'>
+            <header class='resultHeader'>
+              <h2 class='resultTitle'>
+                <a href='#'>
+                  General Manager
+                </a>
+              </h2>
+              <div class='resultCompany'>
+                Mitchells &amp; Butlers
+              </div>
+              <div class='resultStars'>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='grayStar'></span>
+              </div>
+              <a class='resultReviews' href='#'>
+                36 reviews
+              </a>
+              -
+              <span class='resultLocation'>
+                London
+              </span>
+              <a class='resultOtherLocations' href='#'>
+                +2 locations
+              </a>
+              <div class='resultSalary'>
+                &pound;42,000 a year
+              </div>
+            </header>
+            <div class='resultDescription'>
+              General Manager vacancy! Mitchells & Butlers are looking for General Manager level candidates to get in touch!...
+            </div>
+            <footer class='resultFooter'>
+              <span class='resultAge'>
+                5 days ago
+              </span>
+              -
+              <a class='resultSave' href='#'>
+                save job
+              </a>
+              -
+              <a class='resultEmail' href='#'>
+                email
+              </a>
+              -
+              <a class='resultMore' href='#'>
+                more...
+              </a>
+            </footer>
+          </article>
+          <article class='searchResult'>
+            <header class='resultHeader'>
+              <h2 class='resultTitle'>
+                <a href='#'>
+                  General Manager
+                </a>
+              </h2>
+              <div class='resultCompany'>
+                Mitchells &amp; Butlers
+              </div>
+              <div class='resultStars'>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='yellowStar'></span>
+                <span class='grayStar'></span>
+              </div>
+              <a class='resultReviews' href='#'>
+                36 reviews
+              </a>
+              -
+              <span class='resultLocation'>
+                London
+              </span>
+              <a class='resultOtherLocations' href='#'>
+                +2 locations
+              </a>
+              <div class='resultSalary'>
+                &pound;42,000 a year
+              </div>
+            </header>
+            <div class='resultDescription'>
+              General Manager vacancy! Mitchells & Butlers are looking for General Manager level candidates to get in touch!...
+            </div>
+            <footer class='resultFooter'>
+              <span class='resultAge'>
+                5 days ago
+              </span>
+              -
+              <a class='resultSave' href='#'>
+                save job
+              </a>
+              -
+              <a class='resultEmail' href='#'>
+                email
+              </a>
+              -
+              <a class='resultMore' href='#'>
+                more...
+              </a>
+            </footer>
+          </article>
+          <div id='esbCallToAction'>
+            Never miss a job. Get new jobs emailed to you daily.
+          </div>
+          <div class='emailSubscriptionBox' id='emailSubscriptionBottom'>
+            <form class='emailSubscription' id='esb'>
+              <p class='blurb'>
+                Get email upates for the latest
+                <strong class='currentSearch'>
+                  manager jobs in London
+                </strong>
+              </p>
+              <div class='formItem'>
+                <label for='esbEmail'>
+                  My email:
+                </label>
+                <input id='esbEmail' name='esbEmail'>
+              </div>
+              <button>
+                Send me new jobs
+              </button>
+              <p class='esbCancel'>
+                You can cancel email alerts at any time.
+              </p>
+            </form>
+          </div>
+          <nav id='searchResultsPagination'>
+            Results Page:
+            <span class='current'>
+              1
+            </span>
+            <a href='#'>
+              2
+            </a>
+            <a href='#'>
+              3
+            </a>
+            <a href='#'>
+              4
+            </a>
+            <a href='#'>
+              5
+            </a>
+            <a class='next' href='#'>
+              Next &raquo;
+            </a>
+          </nav>
+        </section>
+        <aside class='col-md-3'>
+          <div class='emailSubscriptionBox' id='emailSubscriptionRight'>
+            <form class='emailSubscription' id='esr'>
+              <p class='blurb'>
+                Get new jobs for this search by email
+              </p>
+              <div class='formItem'>
+                <label for='esrEmail'>
+                  My email:
+                </label>
+                <input id='esbEmail' name='esrEmail'>
+              </div>
+              <button>
+                Send me new jobs
+              </button>
+              <p class='esbCancel'>
+                You can cancel email alerts at any time.
+              </p>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <footer id='siteFooter'>
+      <div class='col-sm-12'>
+        <nav class='row resultsFooterNavStripe navbar'>
+          <a href='#'>
+            Browse Jobs
+          </a>
+          <span class='separator'>
+            -
+          </span>
+          <a href='#'>
+            Job Market Competition
+          </a>
+          <span class='separator'>
+            -
+          </span>
+          <a href='#'>
+            API
+          </a>
+          <span class='separator'>
+            -
+          </span>
+          <a href='#'>
+            About
+          </a>
+          <span class='separator'>
+            -
+          </span>
+          <a href='#'>
+            Help Centre
+          </a>
+        </nav>
+        <div class='row cookies'>
+          <div class='infoBox' id='cookieWarning'>
+            Cookies help us deliver our services. By using our services, you agree to our use of cookies.
+            <br>
+            <a href='#'>
+              Learn more
+            </a>
+            <span class='separator'>
+              &middot;
+            </span>
+            <a href='#'>
+              OK
+            </a>
+          </div>
+        </div>
+        <div class='row footerTerms'>
+          &copy;2016 Indeed -
+          <a href='#'>
+            Cookies, Privacy and Terms
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
